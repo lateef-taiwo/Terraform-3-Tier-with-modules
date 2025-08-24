@@ -34,3 +34,15 @@ jobs:
       - name: Initialize Terraform
         working-directory: ${{env.TERRAFORM_WORKING_DIR}}
         run: terraform init
+
+      - name: Format Terraform Code
+        working-directory: ${{env.TERRAFORM_WORKING_DIR}}
+        run: terraform fmt
+
+      # - name: Validate Terraform
+      #   working-directory: ${{env.TERRAFORM_WORKING_DIR}}
+      #   run: terraform validate
+
+      # - name: Terraform Plan
+      #   working-directory: ${{env.TERRAFORM_WORKING_DIR}}
+      #   run: terraform plan -out=tfplan
