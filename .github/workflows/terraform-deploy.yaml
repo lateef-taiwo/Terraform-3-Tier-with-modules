@@ -19,7 +19,7 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
       AWS_REGION: us-east-1
       # Define Terraform Version
-      TERRAFORM_VERSION: 1.5.1
+      TERRAFORM_VERSION: 1.12.0
       TERRAFORM_WORKING_DIR: ./Root
 
     steps:
