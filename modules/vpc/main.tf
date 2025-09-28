@@ -19,7 +19,7 @@ resource "aws_internet_gateway" "internet_gateway" {
   }
 }
 
-# use data source to get all avalablility zones in region
+# use data source to get all availability zones in region
 data "aws_availability_zones" "available_zones" {}
 
 # create public subnet pub_sub_1a

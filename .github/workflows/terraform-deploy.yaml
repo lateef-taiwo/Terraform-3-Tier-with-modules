@@ -42,7 +42,3 @@ jobs:
       - name: Validate Terraform
         working-directory: ${{env.TERRAFORM_WORKING_DIR}}
         run: terraform validate
-
-      # - name: Terraform Plan
-      #   working-directory: ${{env.TERRAFORM_WORKING_DIR}}
-      #   run: terraform plan -out=tfplan
