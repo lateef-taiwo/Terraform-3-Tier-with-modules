@@ -59,7 +59,11 @@ jobs:
           certificate_domain_name = "${{ vars.CERTIFICATE_DOMAIN_NAME }}"
           additional_domain_name  = "${{ vars.ADDITIONAL_DOMAIN_NAME }}"
           EOF
-          
+
       - name: Validate Terraform
         working-directory: ${{env.TERRAFORM_WORKING_DIR}}
         run: terraform validate
+
+      - name: Terraform Plan
+        working-directory: ${{env.TERRAFORM_WORKING_DIR}}
+        run: terraform plan -lock=false
