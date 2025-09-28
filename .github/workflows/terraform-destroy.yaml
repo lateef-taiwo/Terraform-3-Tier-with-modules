@@ -18,7 +18,7 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_REGION: us-east-1
       TERRAFORM_VER: 1.12.0
-      TERRAFORM_PATH: ./App
+      TERRAFORM_PATH: ./Root
 
     steps:
       - name: Checkout Repository
