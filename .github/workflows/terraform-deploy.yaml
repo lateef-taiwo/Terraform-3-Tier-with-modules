@@ -1,5 +1,5 @@
 # Pipeline to deploy 3-tier Architecture Infra using Terraform
-name: Terraform Deploy Pipeline
+name: Terraform Apply Pipeline
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 #   pull_request:
 #     branches:
 #       - main
-
+  workflow_dispatch:
 jobs:
   Terraform_Infra_Deploy:
     runs-on: ubuntu-latest
